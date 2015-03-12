@@ -13,9 +13,9 @@ body {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	height:320px;
-    width:100%;
+    width:96%;
+    margin:0 2%;
 }
-
 
 .content_text {
 	font-weight:bold;
@@ -27,48 +27,47 @@ body {
     top:0;
     left:5%;
     width: 90%;
-    height:70px;
+    height:50px;
     background: #2e2e2e;
 }
 .button{
 	postiion:relative;
 	float:left;
-	width:25%;
-	margin:10px 0 0 3%;
-	padding:5px 2px;
-	height:50px;
+	width:28%;
+	margin:5px 0 0 2%;
+	padding:2px 2px;
+	height:40px;
 	background:#2e2e2e;
 	color:#FEFEFE;
 	border-radius: 10px;
 	text-align:center;
-	line-height: 50px;
+	line-height: 40px;
     border: 2px solid #dedede;
 }
 .operator{
-     	postiion:relative;
+    postiion:relative;
 	float:left;
-	width:25%;
-	margin:10px 0 0 3%;
-	padding:5px 2px;
-	height:50px;
+	width:28%;
+	margin:5px 0 0 2%;
+	padding:2px 2px;
+	height:40px;
 	background:#c21016;
 	color:#FEFEFE;
 	border-radius: 10px;
 	text-align:center;
-	line-height: 50px; 
+	line-height: 40px; 
     border: 2px solid #dedede;
 }
 .buttonRow{
     display:block;
     width:100%;
 	height:50px;
-    padding:0 5%;
 }
 
 /* Page 1 */
 .pageOneButtonContainer{
-	width:90%;
+	width:70%;
 	height:auto;
-	margin:75px 5% 0 5%	
+	margin:10px 0;
 }
 
