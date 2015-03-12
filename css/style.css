@@ -21,3 +21,28 @@ body {
 	font-size:5em;
 	color:#fff;
 }
+
+.button{
+	postiion:relative;
+	float:left;
+	width:30%;
+	margin:10px 0 0 3%;
+	padding:5px 2px;
+	height:50px;
+	background:#2e2e2e;
+	color:#FEFEFE;
+	border-radius: 10px;
+	text-align:center;
+	line-height: 50px;
+}
+.buttonRow{
+	height:50px;	
+}
+}
+/* Page 1 */
+.pageOneButtonContainer{
+	width:90%;
+	height:auto;
+	margin:5px 5% 0 5%	
+}
+
