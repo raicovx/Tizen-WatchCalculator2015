@@ -29,6 +29,7 @@ body {
     width: 90%;
     height:50px;
     background: #2e2e2e;
+    color:#dedede;
 }
 .button{
 	postiion:relative;
