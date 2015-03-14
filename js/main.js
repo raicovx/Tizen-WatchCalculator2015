@@ -5,11 +5,6 @@ $(window).load(function(){
             tizen.application.getCurrentApplication().exit();
     });
 	totaldiv = $('.textBar');
-	var testNumLength = function(number){
-      if(number.length > 9){
-          totaldiv.text(number.substr(number.length-9, 9));
-      }
-    };
     var number = "";
     var newnumber = "";
     var operator = "";
@@ -18,6 +13,24 @@ $(window).load(function(){
     $(".button").not('.C, .AC').click(function(){
         number += $(this).text();
         totaldiv.text(number);
-        testNumLength(number);
+    });
+    $('.operator').click(function(){
+       if(operator.length > 0){
+           operator = $(this).html();
+       }else{
+        newnumber = totaldiv.text();
+        number= "";
+        totaldiv.text('0');
+        operator = $(this).html();
+       }
+        
+    });
+    $('.C, .AC').click(function(){
+          var whichClass = $(this).attr('class');
+        number = "";
+        totaldiv.text('0')
+        if(whichClass == "AC"){
+            newnumber = "";   
+        }
     });
 });
