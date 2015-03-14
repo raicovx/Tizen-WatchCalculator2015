@@ -1,3 +1,4 @@
+$buttonHeight = 30px;
 * {
     font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
 }
@@ -33,26 +34,29 @@ body {
     color:#dedede;
     z-index:99;
 }
-.button{
+.button,.C, .AC{
 	postiion:relative;
 	float:left;
 	width:30%;
 	margin:5px 0 0 1%;
 	padding:2px 0px;
-	height:30px;
+	height:$buttonHeight;
 	background:#2e2e2e;
-	color:#FEFEFE;
 	border-radius: 10px;
 	text-align:center;
 	line-height: 30px;
     border: 2px solid #dedede;
+    color:#FEFEFE;
+}
+.button{
+    background:#2e2e2e;
 }
 .operator{
     position:relative;
     float:left;
 	padding:2px 0px;
     width:90%;
-	height:30px;
+	height:$buttonHeight;
     margin: 5px 0 0 5%;
 	background:#c21016;
 	color:#FEFEFE;
@@ -62,18 +66,7 @@ body {
     border: 2px solid #dedede;
 }
 .C, .AC{
-    postiion:relative;
-	float:left;
-	width:30%;
-	margin:5px 0 0 1%;
-	padding:2px 0px;
-	height:30px;
 	background:#c21016;
-	color:#FEFEFE;
-	border-radius: 10px;
-	text-align:center;
-	line-height: 30px; 
-    border: 2px solid #dedede; 
 }
 .buttonRow{
     display:block;
