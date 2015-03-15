@@ -1,4 +1,6 @@
 $buttonHeight = 30px;
+$mainTextColour = #FEFEFE;
+$buttonBorders = 1px solid #dedede;
 * {
     font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
 }
@@ -44,9 +46,9 @@ body {
 	background:#2e2e2e;
 	border-radius: 10px;
 	text-align:center;
-	line-height: 30px;
-    border: 2px solid #dedede;
-    color:#FEFEFE;
+	line-height:$buttonHeight;
+    border: $buttonBorders
+    color:$mainTextColour;
 }
 .button{
     background:#2e2e2e;
@@ -59,11 +61,11 @@ body {
 	height:$buttonHeight;
     margin: 5px 0 0 5%;
 	background:#c21016;
-	color:#FEFEFE;
+	color:$mainTextColour;
 	border-radius: 10px;
 	text-align:center;
-	line-height: 30px; 
-    border: 2px solid #dedede;
+	line-height:$buttonHeight; 
+    border: $buttonBorders;
 }
 .C, .AC{
 	background:#c21016;
