@@ -25,7 +25,7 @@ $(window).load(function(){
         operatorSet = true;
         }
        if(operatorSet){
-           operator = $(this).html();
+           operator = $(this).text();
        }
     });
     $('.C, .AC').click(function(){
@@ -40,22 +40,25 @@ $(window).load(function(){
         }
     });
     $('.equals').click(function(){
-           if(operator == '+'){
+            if(operator == '+'){
                  calculation = (parseFloat(newnumber,10))+(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
-           }else if(operator == "-"){
+           }
+            if(operator == "-"){
                  calculation = (parseFloat(newnumber,10))-(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
-            }else if(operator == "×"){
+            }
+            if(operator == "×"){
                  calculation = (parseFloat(newnumber,10))*(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
-           }else if(operator == "÷"){
+           }
+            if(operator == "÷"){
                  calculation = (parseFloat(newnumber,10))/(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";

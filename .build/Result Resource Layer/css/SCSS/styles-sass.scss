@@ -1,3 +1,6 @@
+$buttonHeight = 30px;
+$mainTextColour = #FEFEFE;
+$buttonBorders = 1px solid #dedede;
 * {
     font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
 }
@@ -31,53 +34,41 @@ body {
     height:30px;
     background: #2e2e2e;
     color:#dedede;
-    font-size:25px;
     z-index:99;
 }
-.button{
+.button,.C, .AC{
 	postiion:relative;
 	float:left;
-	width:30%!important;
-	margin:5px 0 0 1%!important;
-	padding:2px 0px!important;
-	height:30px!important;
+	width:30%;
+	margin:5px 0 0 1%;
+	padding:2px 0px;
+	height:$buttonHeight;
 	background:#2e2e2e;
-	color:#FEFEFE;
 	border-radius: 10px;
 	text-align:center;
-	line-height: 30px!important;
-    border: 2px solid #dedede;
+	line-height:$buttonHeight;
+    border: $buttonBorders
+    color:$mainTextColour;
+}
+.button{
+    background:#2e2e2e;
 }
 .operator{
     position:relative;
     float:left;
 	padding:2px 0px;
     width:90%;
-	height:30px;
+	height:$buttonHeight;
     margin: 5px 0 0 5%;
 	background:#c21016;
-	color:#FEFEFE;
+	color:$mainTextColour;
 	border-radius: 10px;
 	text-align:center;
-	line-height: 30px; 
-    border: 2px solid #dedede;
+	line-height:$buttonHeight; 
+    border: $buttonBorders;
 }
 .C, .AC{
-    postiion:relative;
-	float:left;
-	width:30%;
-	margin:5px 0 0 1%;
-	padding:2px 0px;
-	height:30px;
 	background:#c21016;
-	color:#FEFEFE;
-	border-radius: 10px;
-	text-align:center;
-	line-height: 30px; 
-    border: 2px solid #dedede; 
-}
-.Large{
-    width:100%!important;   
 }
 .buttonRow{
     display:block;

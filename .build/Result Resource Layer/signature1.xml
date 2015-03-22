@@ -4,15 +4,63 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>DtF8Y7AStcoX5EuvdeooW9ocKrr5CIcaFJcP6Eqg4ow=</DigestValue>
+<DigestValue>UcMkfIziOLwBEDreayWueFe7qiaYFcaRmRRaufPhtiQ=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>gR4lTNHk1DcciVAp4UVv3Brj1mCg2QPFp4zvQxB+G90=</DigestValue>
 </Reference>
+<Reference URI="css%2FSCSS%2Fstyles-sass.scss">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>g8xfXeV+K+lYYnMIKiYsBpz2DaCVRqvt+pAvElPgWt0=</DigestValue>
+</Reference>
+<Reference URI="css%2Fmaterialize.css">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>a2HhDCh0QPRtJgx1lJ0NjjAzQH5OEmx6WjVmOPiHsyw=</DigestValue>
+</Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>eS3CbA+x9aOIW6OydMK/Q2QN9wDyYYoaomL5CchH1bM=</DigestValue>
+<DigestValue>NiGgfUYFe99+9essFVDy+1yijXgN/gLhR4PPBy8D/No=</DigestValue>
+</Reference>
+<Reference URI="font%2Fmaterial-design-icons%2FLICENSE.txt">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>BAUeChRJSkmXzt1ONxzMnpJi/NJ4yalhKcNrQnfEEp0=</DigestValue>
+</Reference>
+<Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.eot">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>X2cZCNPIPtvbm03fgJTPDW3fyk7q6NXN1llxM6FBbf8=</DigestValue>
+</Reference>
+<Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Yw+h2MdP06ecoDOiUMlO3PZENBVBBznhPMBoSB0w7eg=</DigestValue>
+</Reference>
+<Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.ttf">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>h43ei3ih+G5prU+TFr6X8Oku4loJIgGDPHTW5gyUtSw=</DigestValue>
+</Reference>
+<Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.woff">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>OQoHjThFftWDvpSVzftcql1LKFNHfFXS1I3jF1k5ZYI=</DigestValue>
+</Reference>
+<Reference URI="font%2Froboto%2FRoboto-Bold.ttf">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>WU10pJ4we+fMnh7l8QI2hOaCDPEbzJaL7lkDkeGtWlo=</DigestValue>
+</Reference>
+<Reference URI="font%2Froboto%2FRoboto-Light.ttf">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>7kNSBJYD5ZYFUPVURK1yDY1M4yLA3Loa/HfeeMQw0NU=</DigestValue>
+</Reference>
+<Reference URI="font%2Froboto%2FRoboto-Medium.ttf">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>bi7FxfieTOMCu5O0bLfMM2I2UB3hc0jihIeJFMXg5yM=</DigestValue>
+</Reference>
+<Reference URI="font%2Froboto%2FRoboto-Regular.ttf">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>veihiON6qTaxZ67MXlo9pAJi9uUf1UxYTyzytrmdlso=</DigestValue>
+</Reference>
+<Reference URI="font%2Froboto%2FRoboto-Thin.ttf">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>2x1GQ0O/eVMHvJDag9Zbk8hB+yDzhmL5Lx5eLFodLsU=</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -20,7 +68,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>nf9O/E+oMoJxoT+kr5hD2dGU7woo9YmTVBSM67n+5UU=</DigestValue>
+<DigestValue>SkPYC8wg1T0aAL+UE9VPa5D2GMv7qKmHv36+GBOXqVs=</DigestValue>
 </Reference>
 <Reference URI="js%2Fjquery-1.9.1.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -28,7 +76,11 @@
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>7Qtpv1Hk+ihRS8U2PBcRlVjlHTfMrb5HoSjG1pYQ1YY=</DigestValue>
+<DigestValue>zczgr7YpNG98JNEyld7T01ojLX5GYLMEgP3e+Aobd7A=</DigestValue>
+</Reference>
+<Reference URI="js%2Fmaterialize.min.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>x1MbneIf5YTC3qc4n+jmmVXtg98VFJgSIgHK3U8IMRc=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -39,11 +91,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-bOA9XUxTemCo8pNMTsKwL9OMU+XPRwwNsQ+1eHx6G5S88UX3Sk42oZuxyYd9bjsCE/r25Nhqa6lN
-ryhvNfvnKVSCY4jXuLTp+2pEqwYxVvw9ZoXjFLz2mqJxqVCUw0LIB024rzzsrLvLqSnl0MeIbvG+
-QN1D+XiDVF2LpfnB68a0JyUrF1JV4uuYboiwbKq93DEg4eDLjuz1KQGmH+aP6gYMQNx0U0UvY24v
-/gGExfmJRHK+1vo3//KNvPYltOt8Ar9xW4FRLALev01pD9FMBdAcmHZhK93TXM0LRfG1y+wyxCYb
-bQ8RhiTHsFyDDJTX4bhriLrt4v6ZhkrNNC221A==
+T2VM+0jOfAhk2ha28COOLmoL1j0qvCI/1pm5YrLHuonPDCPpmeYSp+ia+CEiRWnZNnUyfp7qxibr
+BRcYf77JhivS2rWndsfl2IPManDFSaIm7lrqel73ohZ6JHfOQ4Rh76RyyEkyKtWpJQOLYc8taf0z
+cI6valG2rFZpXc2DRZOEFcJJjTecQ+Rj4u1xlshwGuUqmeTVlgr2/QPIbnevOvXd+H7zRYyKbVBe
+lSri4nFmtYwfKaWRpTEqbAoWh+LVpSO5blk/LdORAORiECIc29a+k4pAmhM27KP8Rzv7lT3mWVlB
+ss9X9NgNQokdgomfoN4nYKAVnzq6PA0neCTlUA==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
