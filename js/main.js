@@ -20,7 +20,7 @@ $(window).load(function(){
         if(!operatorSet){
         newnumber = totaldiv.text();
         number= "";
-        totaldiv.text('0');
+        totaldiv.text("0");
         operator = $(this).html();
         operatorSet = true;
         }
@@ -66,5 +66,11 @@ $(window).load(function(){
            };
             
     });
+    
+    var redrawTotalDiv = function(){
+          totaldiv.css("color", "#3E3E3E");
+          totaldiv.css("color", "#DEDEDE");   
+        
+    };
     
 });
