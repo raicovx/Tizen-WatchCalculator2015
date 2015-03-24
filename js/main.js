@@ -1,10 +1,11 @@
 
 $(window).load(function(){
 	document.addEventListener('tizenhwkey', function(e) {
-        if(e.keyName == "back")
+        if(e.keyName === "back"){
             tizen.application.getCurrentApplication().exit();
+        }
     });
-	totaldiv = $('.textBar');
+	var totaldiv = $('.textBar');
     var number = "";
     var newnumber = "";
     var operator = "";
@@ -31,7 +32,7 @@ $(window).load(function(){
     $('.C, .AC').click(function(){
           var whichClass = $(this).attr('class');
         number = "";
-        totaldiv.text('0')
+        totaldiv.text('0');
         if(whichClass === "AC"){
             newnumber = ""; 
             calculation = "";
@@ -63,14 +64,8 @@ $(window).load(function(){
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
-           };
+           }
             
     });
-    
-    var redrawTotalDiv = function(){
-          totaldiv.css("color", "#3E3E3E");
-          totaldiv.css("color", "#DEDEDE");   
-        
-    };
     
 });
