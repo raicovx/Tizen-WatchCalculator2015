@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>HwtQ4tsYlcIDilURtUNCz5NWshpX9vZDcJ48lkhIZt0=</DigestValue>
+<DigestValue>I77PQtRfnu1qmGzLM9pRAAP9X5jwrv0XhKvBsZjhANM=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -24,7 +24,7 @@
 </Reference>
 <Reference URI="font%2Fmaterial-design-icons%2FLICENSE.txt">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+H/A9lUBj1eWd0isD7EEmDUVQifqdaThYMatEQn7eA0=</DigestValue>
+<DigestValue>BAUeChRJSkmXzt1ONxzMnpJi/NJ4yalhKcNrQnfEEp0=</DigestValue>
 </Reference>
 <Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.eot">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -32,7 +32,7 @@
 </Reference>
 <Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.svg">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>KIidjuFlz5WD6vE8wG1WJXsmCmsjgeuKFi7jNfChMS0=</DigestValue>
+<DigestValue>Yw+h2MdP06ecoDOiUMlO3PZENBVBBznhPMBoSB0w7eg=</DigestValue>
 </Reference>
 <Reference URI="font%2Fmaterial-design-icons%2FMaterial-Design-Icons.ttf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -68,7 +68,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>PQVZ2qDMcSSduLMyg9JbSR+NeQdzSzSzuWetAWKlG/c=</DigestValue>
+<DigestValue>RaPtQAlMzPiQD4bF6oCaFkecRzNrfkMOPbCKAxjnNfE=</DigestValue>
 </Reference>
 <Reference URI="js%2Fjquery-1.9.1.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -76,11 +76,11 @@
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>viN9RdZOGGcp4ID/HnpDeE4fsdOi0ZSt30Hbe4cYzzE=</DigestValue>
+<DigestValue>r8WEwcMIGjQTdR0KTEVcym9RprSdM29dSTeq7jY50UU=</DigestValue>
 </Reference>
 <Reference URI="js%2Fmaterialize.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Txf1mDALPQn/kppa+W1AqMDZ8JwO97D3t5oU0+zO128=</DigestValue>
+<DigestValue>x1MbneIf5YTC3qc4n+jmmVXtg98VFJgSIgHK3U8IMRc=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -91,11 +91,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-X4fEMhT1eS5wGJS14yMN53P8V+6+FRM48KhyDwI6NxJmbJPhZmrjVY9A1XZM1l2YDmC7tb/3vkuu
-5aeu0O0aiSfGo42vGxpgioHLrGxUAsfJssQyG+hLkahBeytQlVDz/SHz9HwquGLG98VRFMEsMFoZ
-Ve5ZqJ6W01T3GP0kkbYbc/kRInvG1IZmVlad7V59oJq3XxSzjj7tmxm4cQyWGaP66vIaDKEaUqDY
-NzFAPTB1z+ExsuoHXn7SjkVdyrALRs25xYG60EXBTf9OLXkWLd9IZANhU9S1FQd6RV66N2q49c+O
-jpkIEyGikhcvdd1zWSydpKAqhUGGCLegQAypWA==
+a9u+y4uMM8Z0cfa4nlEvsEbfZelv2tvAzJ/JW7iYqRHIPENEo89XxDyjX1ycqN0OAkLhbNKFTBMy
+e+oGkuQwc21zgLKLHty2NEPxeEzq/d//6XeYIU/29gwU+NHvHnKKIiviZBTb3bYY/uQSmEyKEuFU
+GFZMxKtX73BNM6NdA2RR4f+ohgHrzwEzCOkLZc9C9n4WmNQo4PqcB2rOleD0dVQWTyGXw9ZgqKvI
+bjUCFwRGPj7Uu3iSB1PbwaZo9C8lOjXWCJ+fIN2UkwELECN8oG5yqOiXqgZR/tP0wXt9JpdEUj+O
+qn8VLEoyM/89LSEYp7ozkd038aXrDqXkLb/esw==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

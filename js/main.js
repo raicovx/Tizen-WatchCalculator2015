@@ -5,17 +5,17 @@ $(window).load(function(){
             tizen.application.getCurrentApplication().exit();
         }
     });
-	var totaldiv = $('.textBar');
-    var number = "";
-    var newnumber = "";
-    var operator = "";
-    var operatorSet = false;
-    var calculation = "";
+	var totaldiv = $('.textBar'),
+	 number = "",
+     newnumber = "",
+     operator = "",
+     operatorSet = false,
+     calculation = "";
     totaldiv.text("0");
     
     $(".button").not('.C, .AC').click(function(){
         number += $(this).text();
-        totaldiv.text(number);
+        totaldiv.text(number.toString());
     });
     $('.operator').not('.equals').click(function(){
         if(!operatorSet){
