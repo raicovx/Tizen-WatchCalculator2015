@@ -17,7 +17,7 @@ $(window).load(function(){
         number += $(this).text();
         totaldiv.text(number.toString());
     });
-    $('.operator').not('.equals').click(function(){
+    $('.operator').not('.equals, .posNeg').click(function(){
         if(!operatorSet){
         newnumber = totaldiv.text();
         number= "";
@@ -66,6 +66,11 @@ $(window).load(function(){
                    operatorSet = false;
            }
             
+    });
+    
+    $('.posNeg').click(function(){
+     number = -number;
+        totaldiv.text(number.toString());
     });
     
 });
