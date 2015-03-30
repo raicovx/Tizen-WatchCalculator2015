@@ -46,11 +46,11 @@ $(window).load(function(){
        
     totaldiv.text("0");
     
-    $(".button").not('.C, .AC').click(function(){
+    $(".button").not('.C, .AC, .sqRoot').click(function(){
         number += $(this).text();
         totaldiv.text(number.toString());
     });
-    $('.operator').not('.equals, .posNeg').click(function(){
+    $('.operator, .specialOperator').not('.equals, .posNeg').click(function(){
         if(!operatorSet){
         newnumber = totaldiv.text();
         number= "";
@@ -98,6 +98,12 @@ $(window).load(function(){
                    operator = "";
                    operatorSet = false;
            }
+            if(operator == "^"){
+                calculation = Math.pow(parseFloat(newnumber,10), parseFloat(number,10));
+                 totaldiv.text(calculation.toString()); 
+                   operator = "";
+                   operatorSet = false;
+            }
             
     });
     
@@ -108,6 +114,11 @@ $(window).load(function(){
    
    $('.RowSwitch').click(function(){
        buttonSwitcher();   
+   });
+     $('.sqRoot').click(function(){
+       var visibleNum = parseFloat(totaldiv.text(), 10);
+         visibleNum = Math.sqrt(visibleNum);
+         totaldiv.text(visibleNum);
    });
 });
 
