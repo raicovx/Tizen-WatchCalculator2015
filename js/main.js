@@ -15,7 +15,6 @@ $(window).load(function(){
               }        
         if(!origBttn){
            origBttn = localStorage.origBttn = 'true';
-             alert(localStorage.origBttn);
         }
     };
     var buttonSwitcher = function(){ 
