@@ -46,7 +46,7 @@ $(window).load(function(){
        
     totaldiv.text("0");
     
-    $(".button").not('.C, .AC, .sqRoot').click(function(){
+    $(".button").not('.C, .AC, .sqRoot, .Sine, .Cosine, .Tangent').click(function(){
         number += $(this).text();
         totaldiv.text(number.toString());
     });
@@ -118,6 +118,21 @@ $(window).load(function(){
      $('.sqRoot').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.sqrt(visibleNum);
+         totaldiv.text(visibleNum);
+   });
+       $('.Sine').click(function(){
+       var visibleNum = parseFloat(totaldiv.text(), 10);
+         visibleNum = Math.sin(visibleNum);
+         totaldiv.text(visibleNum);
+   });
+    $('.Cosine').click(function(){
+       var visibleNum = parseFloat(totaldiv.text(), 10);
+         visibleNum = Math.cos(visibleNum);
+         totaldiv.text(visibleNum);
+   });
+    $('.Tangent').click(function(){
+       var visibleNum = parseFloat(totaldiv.text(), 10);
+         visibleNum = Math.tan(visibleNum);
          totaldiv.text(visibleNum);
    });
 });
