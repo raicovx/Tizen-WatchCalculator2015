@@ -13,7 +13,7 @@ $(window).load(function(){
                     $('.buttonRow#one, .buttonRow#three').remove();
                    $('.buttonRow#two').prepend('<div class="buttonRow" id="three"><div class="button 7 waves-effect waves-light btn grey darken-3">7</div><div class="button 8 waves-effect waves-light btn grey darken-3">8</div><div class="button 9 waves-effect waves-light btn grey darken-3">9</div></div>').append('<div class="buttonRow" id="one"><a class="button 1 waves-effect waves-light btn grey darken-3">1</a><a class="button 2 waves-effect waves-light btn grey darken-3">2</a><a class="button 3 waves-effect waves-light btn grey darken-3">3</a></div>');
               }        
-        if(origBttn == 'null'){
+        if(!origBttn){
            origBttn = localStorage.origBttn = 'true';
              alert(localStorage.origBttn);
         }
