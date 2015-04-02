@@ -6,7 +6,7 @@ $(window).load(function(){
         }
     });
     var origBttn;
-
+    var radians;
     var initialButtonCheck = function(){
         origBttn = localStorage.origBttn; 
                 if(origBttn == 'false'){
@@ -66,11 +66,13 @@ $(window).load(function(){
           var whichClass = $(this).attr('class');
         number = "";
         totaldiv.text('0');
+            radians = false;
         if(whichClass === "AC"){
             newnumber = ""; 
             calculation = "";
             operator = "";
             operatorSet = false;
+         
         }
     });
     $('.equals').click(function(){
@@ -79,30 +81,35 @@ $(window).load(function(){
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
+                    radians = false;
            }
             if(operator == "-"){
                  calculation = (parseFloat(newnumber,10))-(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
+                radians = false;
             }
             if(operator == "×"){
                  calculation = (parseFloat(newnumber,10))*(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
+                radians = false;
            }
             if(operator == "÷"){
                  calculation = (parseFloat(newnumber,10))/(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
+                radians = false;
            }
             if(operator == "^"){
                 calculation = Math.pow(parseFloat(newnumber,10), parseFloat(number,10));
                  totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
+                radians = false;
             }
             
     });
@@ -111,29 +118,45 @@ $(window).load(function(){
      number = -number;
         totaldiv.text(number.toString());
     });
-   
+    $('.degRad').click(function(){
+         if(radians){
+              var visibleNum = parseFloat(totaldiv.text(), 10);
+              var degrees = Scicalculation * 180/Math.PI;
+             alert(calculation);
+             totaldiv.text(degrees);
+             radians = false;
+         }else if(!radians){
+               var visibleNum = parseFloat(totaldiv.text(), 10);
+              var radianVal = visibleNum * Math.PI/180;
+             totaldiv.text(radianVal);
+             radians = true;
+         }
+    });
    $('.RowSwitch').click(function(){
        buttonSwitcher();   
    });
      $('.sqRoot').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
-         visibleNum = Math.sqrt(visibleNum);
+         visibleNum = Math.sqrt(visibleNum);         
          totaldiv.text(visibleNum);
    });
        $('.Sine').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.sin(visibleNum);
+           radians = true;
          totaldiv.text(visibleNum);
    });
     $('.Cosine').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.cos(visibleNum);
          totaldiv.text(visibleNum);
+            radians = true;
    });
     $('.Tangent').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.tan(visibleNum);
          totaldiv.text(visibleNum);
+         radians = true;
    });
 });
 
