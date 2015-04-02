@@ -40,13 +40,14 @@ $(window).load(function(){
      newnumber = "",
      operator = "",
      operatorSet = false,
-     calculation = "";
-     
+     calculation = "",
+     sciOpResult,
+        converted;
         initialButtonCheck(); 
        
     totaldiv.text("0");
     
-    $(".button").not('.C, .AC, .sqRoot, .Sine, .Cosine, .Tangent').click(function(){
+    $(".button").not('.C, .AC, .sqRoot, .Sine, .Cosine, .Tangent,.degRad').click(function(){
         number += $(this).text();
         totaldiv.text(number.toString());
     });
@@ -66,6 +67,7 @@ $(window).load(function(){
           var whichClass = $(this).attr('class');
         number = "";
         totaldiv.text('0');
+        converted = false;
             radians = false;
         if(whichClass === "AC"){
             newnumber = ""; 
@@ -116,18 +118,17 @@ $(window).load(function(){
     
     $('.posNeg').click(function(){
      number = -number;
-        totaldiv.text(number.toString());
+        totaldiv.text(number.toString());   
     });
-    $('.degRad').click(function(){
+   $('.degRad').click(function(){
          if(radians){
-              var visibleNum = parseFloat(totaldiv.text(), 10);
-              var degrees = Scicalculation * 180/Math.PI;
-             alert(calculation);
+              var visibleRad = parseFloat(sciOpResult, 10);
+              var degrees = visibleRad * (180/Math.PI);
              totaldiv.text(degrees);
              radians = false;
          }else if(!radians){
                var visibleNum = parseFloat(totaldiv.text(), 10);
-              var radianVal = visibleNum * Math.PI/180;
+              var radianVal = visibleNum / (180/Math.PI);
              totaldiv.text(radianVal);
              radians = true;
          }
@@ -137,26 +138,30 @@ $(window).load(function(){
    });
      $('.sqRoot').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
-         visibleNum = Math.sqrt(visibleNum);         
+         visibleNum = Math.sqrt(visibleNum); 
          totaldiv.text(visibleNum);
    });
        $('.Sine').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.sin(visibleNum);
            radians = true;
+            sciOpResult = visibleNum;
          totaldiv.text(visibleNum);
    });
     $('.Cosine').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.cos(visibleNum);
+         sciOpResult = visibleNum;
          totaldiv.text(visibleNum);
             radians = true;
    });
     $('.Tangent').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.tan(visibleNum);
+         sciOpResult = visibleNum;
          totaldiv.text(visibleNum);
          radians = true;
    });
+  
 });
 
