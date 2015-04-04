@@ -60,7 +60,7 @@ $(window).load(function(){
         operatorSet = true;
         }
        if(operatorSet){
-           operator = $(this).text();
+           operator = $(this).html();
        }
     });
     $('.C, .AC').click(function(){
@@ -140,6 +140,8 @@ $(window).load(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
          visibleNum = Math.sqrt(visibleNum); 
          totaldiv.text(visibleNum);
+          operator = "";
+                   operatorSet = false;
    });
        $('.Sine').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
@@ -147,6 +149,8 @@ $(window).load(function(){
            radians = true;
             sciOpResult = visibleNum;
          totaldiv.text(visibleNum);
+            operator = "";
+                   operatorSet = false;
    });
     $('.Cosine').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
@@ -154,6 +158,8 @@ $(window).load(function(){
          sciOpResult = visibleNum;
          totaldiv.text(visibleNum);
             radians = true;
+         operator = "";
+                   operatorSet = false;
    });
     $('.Tangent').click(function(){
        var visibleNum = parseFloat(totaldiv.text(), 10);
@@ -161,6 +167,8 @@ $(window).load(function(){
          sciOpResult = visibleNum;
          totaldiv.text(visibleNum);
          radians = true;
+         operator = "";
+                   operatorSet = false;
    });
   
 });
