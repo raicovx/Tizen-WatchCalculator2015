@@ -81,29 +81,25 @@ $(window).load(function(){
                    operator = "";
                    operatorSet = false;
                     radians = false;
-           }
-            if(operator == "-"){
+           }else if(operator == "-"){
                  calculation = (parseFloat(newnumber,10))-(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
                 radians = false;
-            }
-            if(operator == "×"){
+            }else if(operator == "×"){
                  calculation = (parseFloat(newnumber,10))*(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
                 radians = false;
-           }
-            if(operator == "÷"){
+           }else if(operator == "÷"){
                  calculation = (parseFloat(newnumber,10))/(parseFloat(number,10));
                    totaldiv.text(calculation.toString()); 
                    operator = "";
                    operatorSet = false;
                 radians = false;
-           }
-            if(operator == "^"){
+           }else if(operator == "^"){
                 calculation = Math.pow(parseFloat(newnumber,10), parseFloat(number,10));
                  totaldiv.text(calculation.toString()); 
                    operator = "";
