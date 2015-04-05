@@ -1,14 +1,13 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
+
 $(window).load(function(){
 	document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName === "back"){
             tizen.application.getCurrentApplication().exit();
         }
     });
-    var origBttn,
-     radians,
-     initialButtonCheck = function(){
+    var origBttn;
+    var radians;
+    var initialButtonCheck = function(){
         origBttn = localStorage.origBttn; 
                 if(origBttn == 'false'){
                     $('.buttonRow#one, .buttonRow#three').remove();
@@ -17,8 +16,8 @@ $(window).load(function(){
         if(!origBttn){
            origBttn = localStorage.origBttn = 'true';
         }
-    },
-    buttonSwitcher = function(){ 
+    };
+    var buttonSwitcher = function(){ 
         origBttn = localStorage.origBttn; 
         if(origBttn == 'true'){
             $('.buttonRow#one, .buttonRow#three').remove();
@@ -33,14 +32,17 @@ $(window).load(function(){
             alert('using else');
             initialButtonCheck();
         }
-    },
-    totaldiv = $('.textBar'),
+    };
+    
+                                            
+	var totaldiv = $('.textBar'),
 	 number = "",
      newnumber = "",
      operator = "",
      operatorSet = false,
      calculation = "",
-     sciOpResult;
+     sciOpResult,
+        converted;
         initialButtonCheck(); 
        
     totaldiv.text("0");
@@ -65,7 +67,8 @@ $(window).load(function(){
           var whichClass = $(this).attr('class');
         number = "";
         totaldiv.text('0');
-          radians = false;
+        converted = false;
+            radians = false;
         if(whichClass === "AC"){
             newnumber = ""; 
             calculation = "";
@@ -119,13 +122,13 @@ $(window).load(function(){
     });
    $('.degRad').click(function(){
          if(radians){
-              var visibleRad = parseFloat(sciOpResult, 10),
-              degrees = visibleRad * (180/Math.PI);
+              var visibleRad = parseFloat(sciOpResult, 10);
+              var degrees = visibleRad * (180/Math.PI);
              totaldiv.text(degrees);
              radians = false;
          }else if(!radians){
-               var visibleNum = parseFloat(totaldiv.text(), 10),
-              radianVal = visibleNum / (180/Math.PI);
+               var visibleNum = parseFloat(totaldiv.text(), 10);
+              var radianVal = visibleNum / (180/Math.PI);
              totaldiv.text(radianVal);
              radians = true;
          }
