@@ -54,11 +54,11 @@ $(window).load(function(){
         newnumber = totaldiv.text();
         number= "";
         totaldiv.text("0");
-        operator = $(this).html();
+        operator = $(this).text();
         operatorSet = true;
         }
        if(operatorSet){
-           operator = $(this).html();
+           operator = $(this).text();
        }
     });
     $('.C, .AC').click(function(){
